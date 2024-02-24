@@ -107,6 +107,7 @@ let intervalTimer = {
                     document.getElementById('audio10sec').play();
                 } else if (this.minutes === 0 && this.seconds === 0) {
                     document.getElementById('audioAlarm').play();
+                    mainTimer.start(); // Inicia o temporizador principal quando o intervalo chegar a zero
                 }
 
                 if (this.minutes === 0 && this.seconds === 0) {
@@ -268,5 +269,4 @@ document.getElementById('decrementTeamB').addEventListener('click', () => {
         document.getElementById('scoreTeamB').textContent = scoreTeamB;
     }
 });
-
 
