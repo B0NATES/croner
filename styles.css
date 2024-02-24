@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1,
+h2 {
+    color: #fff;
+}
+
+#mainTimerDisplay,
+#intervalTimerDisplay {
+    font-size: 6rem;
+    font-family: 'Digital-7', sans-serif;
+    text-align: center;
+    padding: 70px;
+    border: 8px solid #00FF00;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#mainTimerDisplay {
+    background-color: #000;
+}
+
+#intervalTimerDisplay {
+    background-color: #000;
+}
+
+#scoreboard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+#teamAScore {
+    margin-right: auto;
+    margin-left: 20px;
+    color: red;
+    padding: 10px;
+    border: 1px solid;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+#teamBScore {
+    margin-right: auto;
+    margin-left: 20px;
+    color: blue;
+    padding: 10px;
+    border: 1px solid;
+    font-size: 2rem;
+}
+
+.score span {
+    margin-bottom: 10px;
+}
+
+.score button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.timer-controls {
+    display: flex;
+    margin-bottom: 20px;
+    border: 5px solid;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.timer-settings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.timer-settings button {
+    flex: 1 0 calc(33.33% - 10px);
+}
+
+.settings-min {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.h1 {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .timer-controls {
+        padding: 15px;
+    }
+
+    .button-group {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .time-settings {
+        margin-top: 20px;
+    }
+
+    .scoreboard {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .score {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .timer-controls {
+        padding: 30px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0;
+    }
+
+    .time-settings {
+        margin-top: 0;
+    }
+
+    .scoreboard {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .score {
+        margin-top: 0;
+    }
+}

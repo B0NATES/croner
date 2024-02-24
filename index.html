@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Jogo</title>
+    <link rel="shortcut icon" href="./src/image/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="scoreboard">
+        <div class="score" id="teamAScore">
+            <button id="incrementTeamA">+</button>
+            <span id="scoreTeamA">0</span>
+            <button id="decrementTeamA">-</button>
+            <span>Time A</span>
+        </div>
+
+        <div class="score" id="teamBScore">
+            <button id="incrementTeamB">+</button>
+            <span id="scoreTeamB">0</span>
+            <button id="decrementTeamB">-</button>
+            <span>Time B</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="timer-controls">
+            <div>
+                <h1 class="h1">Temporizador Principal</h1>
+                <div id="mainTimerDisplay" class="timer">0:00</div>
+            </div>
+            <div class="button-group">
+                <button id="startStopMainTimer">Iniciar/Parar</button>
+                <button id="resetMainTimer">Resetar</button>
+            </div>
+            <nav class="settings-min">
+                <div class="time-settings">
+                    <h2>Tempo de Jogo</h2>
+                    <button id="3min">3 Min</button>
+                    <button id="5min">5 Min</button>
+                    <button id="7min">7 Min</button>
+                    <button id="10min">10 Min</button>
+                    <button id="20min">20 Min</button>
+                    <button id="25min">25 Min</button>
+                    <button id="custom">Custom</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </nav>
+        </div>
+
+        <div class="timer-controls">
+            <h1 class="h1">Temporizador de Intervalo</h1>
+            <div id="intervalTimerDisplay" class="timer">0:00</div>
+            <div class="button-group">
+                <button id="startStopIntervalTimer">Iniciar/Parar</button>
+                <button id="resetIntervalTimer">Resetar</button>
+            </div>
+            <div class="time-settings">
+                <h2 style="text-align: center;">Tempo de Intervalo</h2>
+                <button id="3min-interval">3 Min</button>
+                <button id="5min-interval">5 Min</button>
+                <button id="1:30min-interval">1:30 Min</button>
+                <button id=":30-interval">:30 Seg</button>
+                <button id="custom-interval">Custom</button>
+                <button id="reset-interval">Reset</button>
+            </div>
+            <audio id="audio5min" src="src/voice/5-min.mp3"></audio>
+            <audio id="audio3min" src="src/voice/3-min.mp3"></audio>
+            <audio id="audio2min" src="src/voice/2-min.mp3"></audio>
+            <audio id="audio1min" src="src/voice/1-min.mp3"></audio>
+            <audio id="audio30sec" src="src/voice/30-seg.mp3"></audio>
+            <audio id="audio10sec" src="src/voice/10-seg.mp3"></audio>
+            <audio id="audioAlarm" src="src/voice/valendo.mp3"></audio>
+
+        </div>
+
+        <h2>Bloco de Anotações</h2>
+        <textarea id="notes" rows="4" cols="50"></textarea>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
