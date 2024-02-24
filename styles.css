@@ -85,13 +85,13 @@ header.scoreboard {
 }
 
 #incrementTeamA {
-    background-image: url("src/image/botao-verde-mais.png");
+    background-image: url("src/image/botao-verde-mais.ico");
     background-size: cover;
     padding: 0;
 }
 
 #decrementTeamA {
-    background-image: url("src/image/botao-vermelho-menos.png");
+    background-image: url("src/image/botao-vermelho-menos.ico");
     background-size: cover;
     padding: 0;
 }
@@ -103,13 +103,13 @@ header.scoreboard {
 }
 
 #incrementTeamB {
-    background-image: url("src/image/botao-verde-mais.png");
+    background-image: url("src/image/botao-verde-mais.ico");
     background-size: cover;
     padding: 0;
 }
 
 #decrementTeamB {
-    background-image: url("src/image/botao-vermelho-menos.png");
+    background-image: url("src/image/botao-vermelho-menos.ico");
     background-size: cover;
     padding: 0;
 }
