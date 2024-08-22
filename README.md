@@ -1,6 +1,6 @@
 # Controle de Jogos
 
-Este é um aplicativo web para controle de jogos com temporizadores, marcadores de pontos e um rodapé com os dizeres "Desenvolvido por Igor Bonates".
+Este é um aplicativo web para controle de jogos com temporizadores, um de intervalo e outro de tempo de jogo.
 
 ### Link Para o projeto em produção: 
 [Croner](https://croner.vercel.app/)
